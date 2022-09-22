@@ -8,8 +8,8 @@ class MyList
     @list = args
   end
 
-  def each
-    @list.each { |item| yield item }
+  def each(&block)
+    @list.each(&block)
   end
 end
 
